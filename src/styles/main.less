@@ -20,6 +20,43 @@ body{
     color: #colors[textColor];
 }
 
+#elemento{
+    border-radius: 16px;
+    padding: 6px;
+    position: relative;
+    background-image: repeating-conic-gradient(from var(--a), green 0%, green 5%, transparent 5%, transparent 40%, green 50%);
+    animation: animate 3s linear infinite;
+}
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate{
+    0%{
+        --a:0deg;
+    }
+    100%{
+        --a:360deg;
+    }
+}
+
+#elemento::before{
+    content: '';
+    position: absolute;
+    background-image: repeating-conic-gradient(from var(--a), yellow 0%, yellow  5%, transparent 5%, transparent 40%, yellow  50%);
+    animation: animate 2s linear infinite;
+    animation-delay: -1s;
+}
+#elemento::after{
+    
+    position: absolute;
+    inset: 8px;
+    background: #colors[backgroundColor];
+}
+
+
 li{
     list-style: none;
 }
@@ -28,11 +65,10 @@ li{
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     @media @breakpointTablet {
         max-width: 80%;
         
@@ -82,6 +118,12 @@ header{
     font-weight: bold;
     margin: 32px 0 ;
     font-size: 16px
+}
+.profile-bio-skills{
+    text-align: center;
+    font-weight: bold;
+    margin: 32px 0 ;
+    font-size: 24px
 }
 
 .social-links{
