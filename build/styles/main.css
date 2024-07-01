@@ -137,3 +137,20 @@ header .profile-avatar {
   color: #0097e6;
   background-color: transparent;
 }
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+table tr:nth-child(even) {
+  background-color: #afc293;
+  color: black;
+}
+thead {
+  background-color: orangered;
+}
+th,
+tr,
+td {
+  padding: 6px;
+  border: 1px solid orangered;
+}
