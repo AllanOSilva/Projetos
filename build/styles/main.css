@@ -13,11 +13,10 @@ body {
 }
 #elemento {
   border-radius: 16px;
-  padding: 6px;
-  position: relative;
+  padding: 16px;
   font-weight: 500;
   background-image: repeating-conic-gradient(from var(--a), green 0%, green 5%, transparent 5%, transparent 40%, green 50%);
-  animation: animate 3s linear infinite;
+  animation: animate 1.5s linear infinite;
 }
 @property --a {
   syntax: '<angle>';
@@ -34,15 +33,16 @@ body {
 }
 #elemento::before {
   content: '';
-  position: absolute;
-  background-image: repeating-conic-gradient(from var(--a), yellow 0%, yellow 5%, transparent 5%, transparent 40%, yellow 50%);
-  animation: animate 2s linear infinite;
-  animation-delay: -1s;
+  height: 100%;
+  width: 100%;
 }
 #elemento::after {
-  position: absolute;
-  inset: 8px;
-  background: #192a56;
+  content: 'Sou um engenheiro de front-end apaixonado por criar experiências digitais envolventes e funcionais. Desde o início da minha jornada profissional, desenvolvi um profundo interesse em transformar designs criativos em realidade interativa na web.Minha jornada começou quando decidi me aprofundar no mundo do desenvolvimento web. Ao longo dos anos, adquiri habilidades sólidas em HTML, CSS e JavaScript, essenciais para traduzir conceitos de design em interfaces intuitivas e responsivas.';
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #192a56;
 }
 li {
   list-style: none;
