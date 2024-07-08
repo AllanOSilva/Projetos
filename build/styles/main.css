@@ -37,7 +37,7 @@ body {
   width: 100%;
 }
 #elemento::after {
-  content: 'Sou um engenheiro de front-end apaixonado por criar experiências digitais envolventes e funcionais. Desenvolvi um profundo interesse em transformar designs criativos em realidade interativa na web. Minha jornada começou quando decidi me aprofundar no mundo do desenvolvimento web. Ao longo do tempo, adquiri habilidades sólidas em HTML, CSS e JavaScript, essenciais para traduzir conceitos de design em interfaces intuitivas e responsivas.';
+  content: 'Sou um engenheiro de front-end apaixonado por criar experiências digitais envolventes e funcionais. Desenvolvi um profundo interesse em transformar designs criativos em realidade interativa na web para traduzir conceitos de design em interfaces intuitivas e responsivas.';
   height: 100%;
   font-size: 16px;
   width: 100%;
