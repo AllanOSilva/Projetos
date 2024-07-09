@@ -42,6 +42,8 @@ body{
     }
 }
 
+
+
 #elemento::before{
     content: '';
     height: 100%;
@@ -91,13 +93,15 @@ header{
 
     img{
         height: 150px;
+        width: 150px;
     }
     
 
     .profile-avatar{
         display: block;
+        justify-content: center;
         margin: 0 auto 24px;
-        border-radius: 50%;
+        border-radius:50%;
     }
 }
 .orbit-container {
@@ -107,32 +111,32 @@ header{
    
 }
 
-.orbit-image {
-    width: 150px; /* Ajuste conforme necessário */
-    height: 150px;
-    border-radius: 50%; /* Deixa a imagem circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
-    animation: orbit 2.5s infinite linear; /* Animação de órbita */
-}
+// .orbit-image {
+//     width: 150px; /* Ajuste conforme necessário */
+//     height: 150px;
+//     border-radius: 50%; /* Deixa a imagem circular */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+//     animation: orbit 2.5s infinite linear; /* Animação de órbita */
+// }
 
-/* Animação de órbita */
-@keyframes orbit {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(25px, -25px); /* Movimento diagonal superior direita */
-    }
-    50% {
-        transform: translate(0, -30px); /* Movimento para cima */
-    }
-    75% {
-        transform: translate(-25px, -25px); /* Movimento diagonal superior esquerda */
-    }
-    100% {
-        transform: translate(0, 0); /* Volta à posição inicial */
-    }
-}
+// /* Animação de órbita */
+// @keyframes orbit {
+//     0% {
+//         transform: translate(0, 0);
+//     }
+//     25% {
+//         transform: translate(25px, -25px); /* Movimento diagonal superior direita */
+//     }
+//     50% {
+//         transform: translate(0, -30px); /* Movimento para cima */
+//     }
+//     75% {
+//         transform: translate(-25px, -25px); /* Movimento diagonal superior esquerda */
+//     }
+//     100% {
+//         transform: translate(0, 0); /* Volta à posição inicial */
+//     }
+// }
 
 .profile-bio{
     text-align: center;
